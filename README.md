@@ -36,8 +36,12 @@ Welcome to the **Rock Paper Scissors** game powered by the Aptos blockchain! Thi
 - **start_game:** Initializes a new game and sets up the game state.
 - **set_player_move:** Allows the player to set their move (rock, paper, or scissors).
 - **randomly_set_computer_move:** Randomly sets the computer's move using the Aptos randomness module.
-- **reset_game:** Resets the game state for continuous play.
 - **finalize_game_results:** Finalizes the game and determines the winner.
+- **reset_game:** Resets the game state for continuous play.
+
+## Video Demo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Yvbr5dnPbKk?si=G1pkatSu8OnTRNWp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Contribution
 

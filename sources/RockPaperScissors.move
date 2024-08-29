@@ -43,17 +43,17 @@ module RockPaperScissors {
         let random_number = randomness::u8_range(1, 4);
         game.computer_move = random_number;
     }
+    
+    public entry fun finalize_game_results(account: &signer) acquires Game {
+        let game = borrow_global_mut<Game>(signer::address_of(account));
+        game.result = determine_winner(game.player_move, game.computer_move);
+    }
 
     public entry fun reset_game(account: &signer) acquires Game {
         let game = borrow_global_mut<Game>(signer::address_of(account));
         game.player_move = 0;
         game.computer_move = 0;
         game.result = 0;
-    }
-    
-    public entry fun finalize_game_results(account: &signer) acquires Game {
-        let game = borrow_global_mut<Game>(signer::address_of(account));
-        game.result = determine_winner(game.player_move, game.computer_move);
     }
 
     fun determine_winner(player_move: u8, computer_move: u8): u8 {
