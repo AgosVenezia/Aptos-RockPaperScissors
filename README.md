@@ -41,7 +41,7 @@ Welcome to the **Rock Paper Scissors** game powered by the Aptos blockchain! Thi
 
 ## Video Demo
 
-https://github.com/user-attachments/assets/4c10bc1e-6178-4098-87e7-0ee2c9cbf4f3
+https://github.com/user-attachments/assets/5c3ad1b2-4d96-4243-bd2b-3d7108b013b8
 
 ## Contribution
 
